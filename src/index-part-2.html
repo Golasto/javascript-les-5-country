@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Country Information - World Regions</title>
+    <title>Country Information - Country searcher</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="index-part-2.html">
+    <link href="index.html">
 </head>
 <body>
-<a href="index-part-2.html">Test</a>
+<label>
+<div id="search"></div>
+<div id="cButton"></div>
+    <div class="results-container">
+        <ul class="results-list" id="list"></ul>
+    </div>
+</label>
 <div id="imgContainer"></div>
 <div id="listContainer"></div>
+<div id="errorContainer">
+<p>Country doesn't exist :(</p>
+</div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="module" src="app.js"></script>
 </body>
